@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+  width: 100%;
+  height: 100vh;
+  font-family: "Outfit";
+}
+hr {
+  border-top: 1px;
+  border-color: hsl(215, 32%, 27%);
+}
+
+.card {
+  width: 275px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+.images {
+  position: relative;
+}
+.view {
+  top: 0;
+  width: 100%;
+  height: 98.5%;
+  border-radius: 10px;
+  background-color: hsl(178, 100%, 50%, 50%);
+  position: absolute;
+  opacity: 0;
+}
+.view:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.view img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nft-picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 18px 0;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  /* font-size: 24px; */
+}
+
+.description {
+  color: hsl(215, 51%, 70%);
+  line-height: 1.5;
+  font-weight: 300;
+}
+.price-time {
+  display: flex;
+  color: hsl(215, 51%, 70%);
+  margin: 18px 0;
+  justify-content: space-between;
+}
+.price {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  color: hsl(178, 100%, 50%);
+}
+.price img {
+  margin-right: 5px;
+}
+.days {
+  display: flex;
+  align-items: center;
+}
+.days img {
+  margin-right: 5px;
+}
+.creator {
+  margin: 18px 0 0 0;
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  align-items: center;
+}
+.creator img {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+span {
+  margin-left: 5px;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+h3:hover,
+span:hover {
+  color: hsl(178, 100%, 50%);
+}
